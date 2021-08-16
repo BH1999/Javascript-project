@@ -1,0 +1,16 @@
+.a{
+  border: 0px solid black;
+  border-radius: 10px;
+   text-align: center;
+   padding: 30px 20px;
+   margin: 170px 300px;
+   height: 200px;
+    
+  background-color: powderblue;
+}
+button{
+  padding: 10px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
