@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+        <title>Student ID-Card Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="h">ID Card Generator</header>
+        
+        <div class="back">
+            
+            <form>
+                <h3>Enter Student Details</h3>
+
+                <label>Enter Name</label>
+                <input type="text" id="inName" placeholder="Name..."><br/>
+                <label>Enter Collage Name</label>
+                <input type="text" id="inCollage" placeholder="collage..."><br/>
+                <label>Enter location</label>
+                <input type="text" id="inLocation" placeholder="location..."><br/>
+                <label for="file" class="upload">Enter Student Picture</label>
+                <input type="file" id="file" accept="image/*" onchange="loadImage(event)"><br/>
+                <input type="button" id="preview" value="Generate ID">
+            </form>
+           
+            <div class="container">
+                <canvas class="card" id="result">
+                    <header id="head">
+                        <div class="camp">
+                            <h4>Generated ID Card</h4>
+                        </div>
+                    </header>
+                    <div class="content">
+                        <img src="" id="imgDisplayed">
+                        <ul>
+                            <li id="name"></li>
+                            <li id="collage"></li>
+                            <li id="location"></li>
+            
+                        </ul>
+
+                    </div>
+                </canvas>
+                
+            </div>
+        </div>
+
+
+
+        <script src="javascript.js"></script>
+    </body>
+</html>
