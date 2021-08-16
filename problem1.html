@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: black;
+                color: aliceblue;
+                text-align: center;
+                padding: 30px;
+            }
+            .a{
+                font-size: 100px;
+                margin: 10px;
+            }
+           
+            .c{
+                font-size: 30px;
+                margin: auto;
+                padding: 15px 20px;
+            }
+            button{
+                margin: 20px 20px;
+            }
+        </style>
+    </head>
+<body>
+
+<p style="font-size: 80px; margin: 10px; ">Digital Clock</p>
+
+<p id="demo" class="a"></p>
+
+<p style="font-size: 60px;margin: auto;">15/8/2021</p>
+<button onclick="myStopFunction()" >
+    <p class="c">Stop</p></button>
+<button onclick="myStartFunction()"><p class="c">Start</p></button>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+  var d = new Date();
+  var t = d.toLocaleTimeString();
+  document.getElementById("demo").innerHTML = t;
+}
+function myStopFunction() {
+  clearInterval(myVar);
+}
+function myStartFunction() {
+   myVar;
+ }
+</script>
+
+
+</body>
+</html>
